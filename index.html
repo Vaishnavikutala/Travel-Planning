@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eco-Friendly Travel Planner</title>
+</head>
+<body>
+    <header>
+        <h1>Eco-Friendly Travel Planner</h1>
+    </header>
+
+    <main>
+        <section id="itinerary">
+            <h2>Plan Your Eco-Conscious Itinerary</h2>
+            <form id="travelForm">
+                <label for="transport">Choose Transport Method:</label>
+                <select id="transport">
+                    <option value="car">Car (0.25 kg CO2/km)</option>
+                    <option value="bus">Bus (0.05 kg CO2/km)</option>
+                    <option value="train">Train (0.02 kg CO2/km)</option>
+                    <option value="plane">Plane (0.15 kg CO2/km)</option>
+                </select>
+
+                <label for="accommodation">Choose Accommodation:</label>
+                <select id="accommodation">
+                    <option value="hotel">Hotel (10 kg CO2/night)</option>
+                    <option value="hostel">Hostel (5 kg CO2/night)</option>
+                    <option value="eco_lodge">Eco Lodge (3 kg CO2/night)</option>
+                </select>
+
+                <label for="activities">Choose Activity:</label>
+                <select id="activities">
+                    <option value="museum">Museum Visit (2 kg CO2)</option>
+                    <option value="hiking">Hiking (0 kg CO2)</option>
+                    <option value="city_tour">City Tour (3 kg CO2)</option>
+                </select>
+
+                <button type="submit">Calculate Carbon Footprint</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Travel Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
